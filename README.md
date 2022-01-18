@@ -1,5 +1,5 @@
 # JogoDePlataformaGodot
-Trabalho prático da disciplina de Tecnologias Emergentes em Informática do CEFET-MG, voltado ao desenvolvimento de um jogo de plataforma 2D usando Godot.
+Trabalho prático da disciplina de Tecnologias Emergentes em Informática do CEFET-MG, voltado ao desenvolvimento de um jogo de plataforma 2D usando Godot. O jogo foi desenvolvido conforme os vídeos da Playlist [Tutorial Godot](https://www.youtube.com/playlist?list=PL-oJEh-N3A3Qis2H0Mi-_jaq1c5oFd2Ty) do canal Clécio Espindola GameDev.  
 
 ## Configuração Inicial
 Inicialmente, é feita a configuração da animação do personagem, tal como sua movimentação inicial nos eixos X e Y, conforme variáveis de velocidade, gravidade e força de pulo, além da função physics_process() do Godot Engine.
@@ -20,6 +20,11 @@ Como próximo passo no tutorial, são feitos ajustes no processo de animação d
 Seguimos então para a configuração da câmera ou visão de jogo e seus limites. Para o contexto de jogo, é desejado que a câmera acompanhe o jogador com suavidade, mostrando partes do cenário que estão próximas do mesmo e deixado de lado áreas fora do limite da tela de jogo. Para tanto, cria-se um elemento "Câmera 2D" na aba do jogador; a mesma terá a opção "current" ativada, além das ferramentas de "smoothing". Os resultados, juntamente com um remanejamento do mapa, são exibidos abaixo.  
 
 https://user-images.githubusercontent.com/51242342/150013438-603f46e3-0bc5-4f1a-b548-f408a5d12d89.mp4
+
+## Parallax Background
+Em sequência, foram configuradas as diferentes camadas do plano de fundo do jogo, utilizando os Assets [Seasonal Tilesets](https://grafxkid.itch.io/seasonal-tilesets) e os nós "Parallax Background" e "Parallax Layers" da Engine Godot. Os diferentes elementos do conjunto de assets foram organizados como texturas de diferentes "Parallax Layers" e então ordenados conforme sua posição. O ajuste à tela foi feito através de configurações de escala e espelhamento, tal como movimentação manual. De modo a proporcionar certa movimentação do cenário em relação ao jogador, são feitos ajustes na propriedade "Motion" das camadas em paralaxe. Por fim, de modo a animar as nuvens, é criado um "Shader Material" no sprite do conjunto de nuvens. Este shader material ganha então um "shade" no wual é desenvolvida uma pequena codificação responsável pela movimentação destes itens. Os resultados são exibidos abaixo. 
+
+https://user-images.githubusercontent.com/51242342/150021429-770263d5-2578-45d1-b260-2ab6b3c60e70.mp4
 
 
 
