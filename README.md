@@ -15,3 +15,11 @@ Em sequência é criado um tilemap o qual é configurado conforme Assets baixado
 Como próximo passo no tutorial, são feitos ajustes no processo de animação do jogador, tal como em seu formato de pulo. São criadas animações associadas ao movimento de corrida do jogador, tal como de pulo e recebimento de ataque. Ademais, é feita a configuração de alternância entre as animações através da alteração do arquivo de Scripts do player. Por fim, são incluídos raycasts no personagem para controlar a colisão do mesmo com o chão, de modo que o pulo só possa ocorrer caso o jogador esteja em alguma superfície, não "pulando infinitamente". Os resultados são expostos em sequência.  
 
 ![recording-_4_-_online-video-cutter com_ (1)](https://user-images.githubusercontent.com/51242342/149678272-490b1e9f-11a6-440a-be21-21bebf08115c.gif)
+
+## Câmera 2D e Limites
+Seguimos então para a configuração da câmera ou visão de jogo e seus limites. Para o contexto de jogo, é desejado que a câmera acompanhe o jogador com suavidade, mostrando partes do cenário que estão próximas do mesmo e deixado de lado áreas fora do limite da tela de jogo. Para tanto, cria-se um elemento "Câmera 2D" na aba do jogador; a mesma terá a opção "current" ativada, além das ferramentas de "smoothing". Os resultados, juntamente com um remanejamento do mapa, são exibidos abaixo.  
+
+https://user-images.githubusercontent.com/51242342/150013438-603f46e3-0bc5-4f1a-b548-f408a5d12d89.mp4
+
+
+
