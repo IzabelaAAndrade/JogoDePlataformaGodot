@@ -31,5 +31,10 @@ Um outro ponto importante no jogo em desenvolvimento é a criação de fallzones
 
 https://user-images.githubusercontent.com/51242342/150041739-97ea764e-fa37-4af9-91a0-e7b3e04aa648.mp4
 
+## Itens
+Finalmente, são criados itens os quais podem ser coletados pelo jogador. Ao serem tocados pelo mesmo, estes objetos terão sua animação "coletado" rodada e, ao fim desta, desparecerão da cena através do uso da função queue_free(). Os resultados são expostos abaixo. 
+
+https://user-images.githubusercontent.com/51242342/150214391-c1312494-27f0-478a-b539-04527800696f.mp4
+
 
 
