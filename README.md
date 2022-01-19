@@ -26,5 +26,10 @@ Em sequência, foram configuradas as diferentes camadas do plano de fundo do jog
 
 https://user-images.githubusercontent.com/51242342/150021429-770263d5-2578-45d1-b260-2ab6b3c60e70.mp4
 
+## Fall Zones
+Um outro ponto importante no jogo em desenvolvimento é a criação de fallzones ou zonas de queda, nas quais caso o personagem se insira, o nível deverá ser reiniciado. Isso é feito usando uma área 2d com a função "body_entered". A mesma reiniciará a fase ou cenário em curso caso o personagegm adentrar a área em cheque. O resultado é exibido em sequência. 
+
+https://user-images.githubusercontent.com/51242342/150041739-97ea764e-fa37-4af9-91a0-e7b3e04aa648.mp4
+
 
 
