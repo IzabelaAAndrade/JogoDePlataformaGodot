@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Enemies/Bunny/Run (34x44).png" type="Texture" id=1]
 [ext_resource path="res://Assets/Enemies/Bunny/Idle (34x44).png" type="Texture" id=2]
 [ext_resource path="res://Assets/Enemies/Bunny/Hit (34x44).png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Enemy.gd" type="Script" id=4]
+[ext_resource path="res://Prefabs/hitbox.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 11.7984, 11.9865 )
@@ -194,4 +195,16 @@ enabled = true
 cast_to = Vector2( -16, 0 )
 collision_mask = 9
 
+[node name="hitbox" parent="." instance=ExtResource( 5 )]
+modulate = Color( 0.72549, 0.156863, 0.156863, 1 )
+position = Vector2( 4.30762, -15.1704 )
+rotation = 0.310669
+
+[node name="hitbox2" parent="." instance=ExtResource( 5 )]
+modulate = Color( 0.72549, 0.156863, 0.156863, 1 )
+position = Vector2( 0.187272, -7.86612 )
+rotation = -3.25678
+
 [connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="body_entered" from="hitbox2" to="." method="_on_hitbox_body_entered"]
