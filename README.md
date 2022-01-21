@@ -1,4 +1,4 @@
-# JogoDePlataformaGodot
+# Trabalho Prático: Jogo de Plataforma 2D usando Godot Engine
 Trabalho prático da disciplina de Tecnologias Emergentes em Informática do CEFET-MG, voltado ao desenvolvimento de um jogo de plataforma 2D usando Godot. O jogo foi desenvolvido conforme os vídeos da Playlist [Tutorial Godot](https://www.youtube.com/playlist?list=PL-oJEh-N3A3Qis2H0Mi-_jaq1c5oFd2Ty) do canal Clécio Espindola GameDev.  
 
 ## Configuração Inicial
