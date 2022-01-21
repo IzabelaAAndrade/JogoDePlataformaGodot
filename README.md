@@ -41,6 +41,10 @@ Dentre os personagens importantes ao jogo em desenvolvimento estão os inimigos 
 
 https://user-images.githubusercontent.com/51242342/150543425-cc073a22-0c7e-45e4-a101-4512f8eded10.mp4
 
+## Colisão Jogador-Inimigo
+Conforme mencionado, a colisão entre o jogador e seus inimigos de modo a lhe causar dano ou a inflingi-lo no vilão ainda não havia sido implementada, algo que é feito neste item através de áreas 2d com colision shapes. São implementadas funções que analisam a entrada de corpos nestas áreas. Dependendo de qual delas se trata, tem-se a ocorrência de dano ou no personagem principal ou em seu inimigo, podendo ocasionar a morte do indivíduo em cheque. Caso este seja o jogador, a cena em curso é reiniciada. Vê-se o resultado a seguir. 
+
+https://user-images.githubusercontent.com/51242342/150561516-72a421be-bf99-4c82-b5fd-0156d0e57f83.mp4
 
 
 
