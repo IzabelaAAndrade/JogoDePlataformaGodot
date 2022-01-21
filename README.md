@@ -36,5 +36,12 @@ Finalmente, são criados itens os quais podem ser coletados pelo jogador. Ao ser
 
 https://user-images.githubusercontent.com/51242342/150214391-c1312494-27f0-478a-b539-04527800696f.mp4
 
+## Enemies
+Dentre os personagens importantes ao jogo em desenvolvimento estão os inimigos os quais o jogador deverá enfrentar. Estes são criados de maneira semelhante ao personagem principal, com as animações de run, hit e idle. Esta última, no entanto, não é contínua devido à necessidade de se reportar seu fim para uma movimentação mais harmônica do inimigo. Através de um raycast para verificação de colisões laterais com paredes ou com o próprio jogador, desenvolve-se um sistema de patrulha, o qual é apresentado a seguir. Os inimigos ainda não causam dano ao personagem neste estágio de desenvolvimento, algo que será implementado mais adiante. 
+
+https://user-images.githubusercontent.com/51242342/150543425-cc073a22-0c7e-45e4-a101-4512f8eded10.mp4
+
+
+
 
 
