@@ -31,6 +31,11 @@ func _physics_process(delta: float) -> void:
 	#Configurações	de animação
 	_set_animation()
 	
+	#Configurações de colisão com plataformas as quais caem
+	for platform in get_slide_count(): # get_slide_count conta com quantos corpos o corpo colidiu 
+		var collision = get_slide_collision(platform)
+		if collision.collider.has_method("collide_with"):
+			collision.collider.collide_with(collision, self)
 	
 func _get_input():
 	velocity.x = 0
