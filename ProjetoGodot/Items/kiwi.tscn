@@ -128,7 +128,7 @@ tracks/2/keys = {
 [node name="kiwi" instance=ExtResource( 3 )]
 
 [node name="cherry" parent="." index="0"]
-texture = ExtResource( 4 )
+texture = ExtResource( 2 )
 
 [node name="anim" parent="." index="2"]
 anims/RESET = SubResource( 1 )

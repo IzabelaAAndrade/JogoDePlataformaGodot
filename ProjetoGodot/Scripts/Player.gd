@@ -9,6 +9,7 @@ var jump_force = -720 # Força de pulo
 var is_grounded # Verificar se o jogador está no chão ou em um local que o permita pular
 var health = 2 # vida do jogador
 var hurt = false
+var UP = Vector2.UP # De modo a sincronizar o jogador com o movimento da plataforma móvel
 # impulso de ser acertado
 var knockback_dir = 1
 var knockback_int = 300
@@ -19,11 +20,14 @@ func _physics_process(delta: float) -> void:
 	#Ajuste gravidade
 	velocity.y += gravity * delta
 	
+	
 	#Ajuste movimentação no eixo X
-	_get_input()
+	velocity.x = 0
+	if !hurt:
+		_get_input()
 	
 	#Configurações de ambiente
-	velocity = move_and_slide(velocity)
+	velocity = move_and_slide(velocity, UP)
 	
 	#Configuração de Pulo
 	is_grounded = _check_is_grounded()
