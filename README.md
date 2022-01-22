@@ -1,5 +1,7 @@
 # Trabalho Prático: Jogo de Plataforma 2D usando Godot Engine
-Trabalho prático da disciplina de Tecnologias Emergentes em Informática do CEFET-MG, voltado ao desenvolvimento de um jogo de plataforma 2D usando Godot. O jogo foi desenvolvido conforme os vídeos da Playlist [Tutorial Godot](https://www.youtube.com/playlist?list=PL-oJEh-N3A3Qis2H0Mi-_jaq1c5oFd2Ty) do canal Clécio Espindola GameDev.  
+Trabalho prático da disciplina de Tecnologias Emergentes em Informática do CEFET-MG, voltado ao desenvolvimento de um jogo de plataforma 2D usando Godot. O jogo foi desenvolvido conforme os vídeos da Playlist [Tutorial Godot](https://www.youtube.com/playlist?list=PL-oJEh-N3A3Qis2H0Mi-_jaq1c5oFd2Ty) do canal Clécio Espindola GameDev.
+
+# Processo de Implementação: Passo a Passo Conforme as Vídeo-Aulas
 
 ## Configuração Inicial
 Inicialmente, é feita a configuração da animação do personagem, tal como sua movimentação inicial nos eixos X e Y, conforme variáveis de velocidade, gravidade e força de pulo, além da função physics_process() do Godot Engine.
@@ -46,6 +48,9 @@ Conforme mencionado, a colisão entre o jogador e seus inimigos de modo a lhe ca
 
 https://user-images.githubusercontent.com/51242342/150561516-72a421be-bf99-4c82-b5fd-0156d0e57f83.mp4
 
+## Falling Platforms
+De modo a tornar o jogo mais interessante e aumentar seu grau de dificuldade, foram criadas neste itens plataformas as quais "caem" após terem contato com o jogador. Tal função foi implementada através de uma verificação de colisão em adição a um timer e uma verificação de fim de animação. Após alguns segundos, a plataforma caída é restaurada à sua posição e animação originais. O resultado é exposto abaixo. 
 
+https://user-images.githubusercontent.com/51242342/150653031-2a411f77-3702-4319-a764-4f036b6b2eef.mp4
 
 
